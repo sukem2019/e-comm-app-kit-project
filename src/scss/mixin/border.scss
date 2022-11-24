@@ -1,0 +1,7 @@
+@mixin border($width, $height, $radius, $bg-color: none, $border: none) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    background-color: $bg-color;
+    border: $border;
+}

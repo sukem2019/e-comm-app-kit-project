@@ -1,0 +1,50 @@
+.RP {
+    padding: $mobile-padding;
+    .RP__banner {
+        width: 100%;
+        height: auto;
+        position: relative;
+        .RP__img {
+            border-radius: 5px;
+            width: 100%;
+            height: auto;
+        }
+        .RP__title {
+            position: absolute;
+            top: 48px;
+            left: 24px;
+            color: $white-background;
+        }
+        .RP__content {
+            position: absolute;
+            left: 24px;
+            bottom: 48px;
+            color: $white-background;
+        }
+    }
+    .product-list {
+        padding-bottom: calc($mobile-menu-height + $mobile-menu-padding-bottom);
+        .product-item {
+            @include productCardMobile;
+            @include setInternalSpaceY(8px);
+            .product-img {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .product-info {
+                @include setInternalSpaceY(4px);
+                .product-rate {
+                    display: flex;
+                    margin-bottom: 12px;
+                    @include setInternalSpaceX(2px);
+                    svg {
+                        fill: $light-neutral;
+                    }
+                }
+            }
+        }
+    }
+    @include setInternalSpaceY($mobile-padding);
+}

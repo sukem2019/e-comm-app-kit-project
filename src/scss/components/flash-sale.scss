@@ -1,0 +1,31 @@
+.FS {
+    padding: 24px 16px 0;
+    @include setInternalSpaceY(12px);
+    .sale-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .sale-title {
+            color: $dark-neutral;
+        }
+        .sale-link {
+            color: $blue-primary;
+        }
+    }
+    .sale-list {
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+        margin-left: calc($mobile-padding * -1);
+        margin-right: calc($mobile-padding * -1);
+        padding-left: $mobile-padding;
+        padding-right: $mobile-padding;
+        overflow-x: scroll;
+        @include setInternalSpaceX($mobile-padding);
+        @include hideScrollBar;
+        .sale-item {
+            @include productCardMobile;
+            @include setInternalSpaceY(8px);
+        }
+    }
+}

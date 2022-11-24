@@ -1,0 +1,19 @@
+// Set internal space between horizonal elements
+@mixin setInternalSpaceX($spaceX) {
+    &>* {
+        margin-left: $spaceX;
+    }
+    &>*:first-child {
+        margin-left: 0;
+    }
+}
+
+// Set internal space between vertical elements
+@mixin setInternalSpaceY($spaceY) {
+    &>* {
+        margin-top: $spaceY;
+    }
+    &>*:first-child {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,48 @@
+.header {
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $mobile-padding;
+    border-bottom: 1px solid $light-neutral;
+    .header__search {
+        border: 1px solid $light-neutral;
+        border-radius: 5px;
+        flex-grow: 1;
+        display: flex;
+        padding: 12px 16px;
+        button, input {
+            border: none;
+        }
+        button {
+            background-color: unset;
+        }
+        input {
+            flex-grow: 1;
+            background-color: unset;    // remove background color on iphone
+            appearance: none;           // remove additional search icon on iphone
+        }
+        svg {
+            @include svgColor($blue-primary);
+        }
+        @include setInternalSpaceX(8px)
+    }
+    .header__favourite {
+        svg {
+            @include svgColor($grey-neutral);
+        }
+    }
+    .header__notification {
+        position: relative;
+        svg {
+            @include svgColor($grey-neutral);
+        }
+        #new-notification {
+            @include border(8px, 8px, 8px, $red-primary);
+            position: absolute;
+            top: -2px;
+            right: -1px;
+        }
+    }
+    @include setInternalSpaceX($mobile-padding)
+}

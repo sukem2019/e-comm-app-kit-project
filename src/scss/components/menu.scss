@@ -1,0 +1,49 @@
+.menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: $white-background;
+    padding-bottom: $mobile-menu-padding-bottom;
+    .menu-line {
+        border-top: 1px solid $light-neutral;
+        .menu-item {
+            height: $mobile-menu-height;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            @include setInternalSpaceY(4px);
+            .menu-icon {
+                position: relative;
+                svg {
+                    display: block;
+                    @include svgColor($grey-neutral);
+                }
+                .cart-number {
+                    @include border(20px, 20px, 20px, $red-primary, 2px solid $white-background);
+                    color: $white-background;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                }
+            }
+            .menu-text {
+                color: $grey-neutral;
+            }
+            &.active {
+                .menu-icon {
+                    svg {
+                        @include svgColor($blue-primary);
+                    }
+                }
+                .menu-text {
+                    @extend .normal-bold-caption;
+                    color: $blue-primary;
+                }
+            }
+        }
+    }
+}

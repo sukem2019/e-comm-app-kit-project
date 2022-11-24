@@ -1,0 +1,237 @@
+// Poppins font from 400 to 900, normal and italic style
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Placeholder color
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $grey-neutral;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: $grey-neutral;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+color: $grey-neutral;
+}
+
+// Image display
+img {
+    display: block;
+}
+
+// Hide element
+.hidden {
+    display: none !important;
+}
+
+// Checked star
+.star-checked {
+    fill: $yellow-primary !important;
+}
+
+// Link
+a {
+    text-decoration: none;
+    &:focus {
+        -webkit-tap-highlight-color: transparent;   // Remove highlight background when focus
+    }
+}
+
+// Animation
+.blur {
+    animation-name: blur;
+    animation-duration: 1.5s;
+}
+
+@keyframes blur {
+    from {
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    } 
+    to {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+}
+
+// Heading
+h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    /* or 36px */
+
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    
+    letter-spacing: 0.5px;
+}
+
+h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    
+    letter-spacing: 0.5px;
+}
+
+h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    
+    letter-spacing: 0.5px;
+}
+
+h6 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    /* or 18px */
+    
+    letter-spacing: 0.5px;   
+}
+
+// Body text
+.normal-regular-body {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180%;
+    /* or 22px */
+    
+    letter-spacing: 0.5px;
+}
+
+.normal-bold-body {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 180%;
+    /* identical to box height, or 22px */
+    
+    letter-spacing: 0.5px;
+}
+
+// Link text
+.normal-link {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    
+    text-align: right;
+    letter-spacing: 0.5px;
+}
+
+.small-link {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+    
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+// Caption text
+.normal-regular-caption {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    /* identical to box height, or 15px */
+    
+    letter-spacing: 0.5px;
+}
+
+.normal-regular-line-caption {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    /* identical to box height, or 15px */
+    
+    letter-spacing: 0.5px;
+    text-decoration-line: line-through;
+}
+
+.normal-bold-caption {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 150%;
+    /* identical to box height, or 15px */
+    
+    letter-spacing: 0.5px;
+}
+
+// Button text
+.text-button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 180%;
+    /* or 25px */
+    
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+//Form text
+.normal-form {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180%;
+    /* identical to box height, or 22px */
+    
+    letter-spacing: 0.5px;
+}
+
+.fill-form {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 180%;
+    /* identical to box height, or 22px */
+    
+    letter-spacing: 0.5px;
+}

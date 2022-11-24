@@ -1,0 +1,51 @@
+.SFS {
+    .SFS__item {
+        width: 100%;
+        position: relative;
+        padding: $mobile-padding;
+        .SFS__img {
+            border-radius: 5px;
+            width: 100%;
+            height: auto;
+        }
+        .SFS__title {
+            position: absolute;
+            top: calc($mobile-padding + 32px);
+            left: calc($mobile-padding + 24px);
+            color: $white-background;
+        }
+        .SFS__period {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: calc($mobile-padding + 24px);
+            bottom: calc($mobile-padding + 32px);
+            h4 {
+                color: $dark-neutral;
+                width: 42px;
+                height: 42px;
+                background-color: $white-background;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 42px;
+            }
+            h5 {
+                color: $white-background;
+                width: 4px;
+                height: auto;
+            }
+            @include setInternalSpaceX(4px)
+        }
+    }
+    .SFS__indicator {
+        display: flex;
+        justify-content: center;
+        .SFS__dot {
+            @include border(8px, 8px, 8px, $light-neutral);
+        }
+        .SFS__dot.active {
+            background-color: $blue-primary;
+        }
+        @include setInternalSpaceX(8px)
+    }
+}

@@ -1,0 +1,37 @@
+@mixin productCardMobile {
+    display: block;
+    padding: $mobile-padding;
+    background-color: $white-background;
+    border: 1px solid $light-neutral;
+    border-radius: 5px;
+    .product-img {
+        img {
+            width: 109px;
+            height: 109px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .product-description {
+        width: 100%;
+        color: $dark-neutral;
+        text-align: left;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    .product-price {
+        color: $blue-primary;
+    }
+    .sale-info {
+        display: flex;
+        @include setInternalSpaceX(8px);
+        .initial-price {
+            color: $grey-neutral;
+        }
+        .sale-percentage {
+            color: $red-primary;
+        }
+    }
+}
