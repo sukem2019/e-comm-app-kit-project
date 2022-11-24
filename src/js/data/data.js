@@ -143,7 +143,7 @@ export const productList = [
         id: 1,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../../images/products/product${this.id}.png`
+            return `../images/products/product${this.id}.png`
         },
         categoryId: 6,
         flashSaleOrder: 1,          // sale order number, 0 means not for sale
@@ -154,7 +154,7 @@ export const productList = [
         id: 2,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../../images/products/product${this.id}.png`
+            return `../images/products/product${this.id}.png`
         },
         categoryId: 9,
         flashSaleOrder: 2,          // sale order number, 0 means not for sale
@@ -165,7 +165,7 @@ export const productList = [
         id: 3,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../../images/products/product${this.id}.png`
+            return `../images/products/product${this.id}.png`
         },
         categoryId: 6,
         flashSaleOrder: 3,          // sale order number, 0 means not for sale
@@ -176,7 +176,7 @@ export const productList = [
         id: 4,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../../images/products/product${this.id}.png`
+            return `../images/products/product${this.id}.png`
         },
         categoryId: 9,
         flashSaleOrder: 4,          // sale order number, 0 means not for sale
@@ -187,7 +187,7 @@ export const productList = [
         id: 5,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../../images/products/product${this.id}.png`
+            return `../images/products/product${this.id}.png`
         },
         categoryId: 6,
         flashSaleOrder: 5,          // sale order number, 0 means not for sale
@@ -198,7 +198,7 @@ export const productList = [
         id: 6,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../../images/products/product${this.id}.png`
+            return `../images/products/product${this.id}.png`
         },
         categoryId: 9,
         flashSaleOrder: 6,          // sale order number, 0 means not for sale
@@ -212,15 +212,177 @@ export const superFlashSaleList = [
         superFlashSaleOrder: 1,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../../images/SFS/SFS${this.superFlashSaleOrder}.png`
+            return `../images/SFS/SFS${this.superFlashSaleOrder}.png`
         },
     }, 
     {
         superFlashSaleOrder: 2,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../../images/SFS/SFS${this.superFlashSaleOrder}.png`
+            return `../images/SFS/SFS${this.superFlashSaleOrder}.png`
         },
     }, 
 
+]
+
+export const flashSaleList = [
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        flashSaleOrder: 1,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/FS/FS${this.flashSaleOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        flashSaleOrder: 2,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/FS/FS${this.flashSaleOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        flashSaleOrder: 3,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/FS/FS${this.flashSaleOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        flashSaleOrder: 4,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/FS/FS${this.flashSaleOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        flashSaleOrder: 5,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/FS/FS${this.flashSaleOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        flashSaleOrder: 6,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/FS/FS${this.flashSaleOrder}.png`
+        },
+    },
+]
+
+export const megaSaleList = [
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        megaSaleOrder: 1,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/MS/MS${this.megaSaleOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        megaSaleOrder: 2,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/MS/MS${this.megaSaleOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        megaSaleOrder: 3,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/MS/MS${this.megaSaleOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        megaSaleOrder: 4,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/MS/MS${this.megaSaleOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        megaSaleOrder: 5,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/MS/MS${this.megaSaleOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        megaSaleOrder: 6,          // sale order number, 0 means not for sale
+        initialPrice: 539,
+        salePercentage: 50,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/MS/MS${this.megaSaleOrder}.png`
+        },
+    },
 ]
