@@ -15,8 +15,6 @@ function showCategoryList(categoryList, selector) {
         }
     }
 
-    console.log(htmlCategory)
-
     htmlRender(htmlCategory, selector)
 }
 

@@ -1,7 +1,5 @@
 // Import data
-import {categoryList} from  "./data/data.js"
-import {productList} from  "./data/data.js"
-import {superFlashSaleList} from "./data/data.js"
+import {categoryList, flashSaleList, productList, superFlashSaleList, megaSaleList} from  "./data/data.js"
 
 // Import function
 import htmlRender from "./modules/render.js"
@@ -11,6 +9,7 @@ import showQuantityInCart from "./modules/quantity-in-cart.js"
 import hideWhenScrollUp from "./modules/hide-when-scroll-up.js"
 import slide from "./modules/slide.js"
 import showCategoryList from "./modules/category-list.js"
+import showSaleProducts from "./modules/sale-products-list.js"
 
 // Test
 // console.log(categoryList)
@@ -52,6 +51,15 @@ slide(slideContainer, slideIndicator, superFlashSaleList)
 
 // Render Category list
 var categoryElement = document.querySelector('.category__list')
-console.log(123)
 
 showCategoryList(categoryList, categoryElement)
+
+// Render Flash Sale list
+var flashSaleElement = document.querySelector('.FS .sale-list')
+
+showSaleProducts('FS', flashSaleList, flashSaleElement)
+
+// Render Mega Sale list
+var megaSaleElement = document.querySelector('.MS .sale-list')
+
+showSaleProducts('MS', megaSaleList, megaSaleElement)
