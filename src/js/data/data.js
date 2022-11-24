@@ -386,3 +386,62 @@ export const megaSaleList = [
         },
     },
 ]
+
+export const recommendedList = [
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        recommendedOrder: 1,
+        initialPrice: 539,
+        salePercentage: 50,
+        starRate: 4,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/RP/RP${this.recommendedOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        recommendedOrder: 2,
+        initialPrice: 539,
+        salePercentage: 50,
+        starRate: 5,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/RP/RP${this.recommendedOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        recommendedOrder: 3,
+        initialPrice: 539,
+        salePercentage: 50,
+        starRate: 3,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/RP/RP${this.recommendedOrder}.png`
+        },
+    },
+    {
+        name: 'Nike Air Max 270 React ENG',
+        categoryId: 6,
+        recommendedOrder: 4,
+        initialPrice: 539,
+        salePercentage: 50,
+        starRate: 4,
+        productPrice() {
+            return Math.floor(this.initialPrice * this.salePercentage / 100)
+        },
+        img() {
+            return `../images/RP/RP${this.recommendedOrder}.png`
+        },
+    },
+]

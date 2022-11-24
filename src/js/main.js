@@ -1,5 +1,5 @@
 // Import data
-import {categoryList, flashSaleList, productList, superFlashSaleList, megaSaleList} from  "./data/data.js"
+import {categoryList, flashSaleList, productList, superFlashSaleList, megaSaleList, recommendedList} from  "./data/data.js"
 
 // Import function
 import htmlRender from "./modules/render.js"
@@ -10,6 +10,7 @@ import hideWhenScrollUp from "./modules/hide-when-scroll-up.js"
 import slide from "./modules/slide.js"
 import showCategoryList from "./modules/category-list.js"
 import showSaleProducts from "./modules/sale-products-list.js"
+import showProducts from "./modules/products-list.js"
 
 // Test
 // console.log(categoryList)
@@ -25,7 +26,7 @@ var notifyElement = document.querySelector('#new-notification')
 showNewNotification(isNewNotification,notifyElement)
 
 // Sale counting down
-var saleEndTime = "2022/11/25"
+var saleEndTime = "2022/11/28"
 var hourElement = document.querySelector('#hour-count-down')
 var minuteElement = document.querySelector('#minute-count-down')
 var secondElement = document.querySelector('#second-count-down')
@@ -63,3 +64,10 @@ showSaleProducts('FS', flashSaleList, flashSaleElement)
 var megaSaleElement = document.querySelector('.MS .sale-list')
 
 showSaleProducts('MS', megaSaleList, megaSaleElement)
+
+// Render Recommended products
+var recommendedElement = document.querySelector('.RP .product-list')
+var orderKey = 'recommendedOrder'
+var columnClass = 'col m-6'
+
+showProducts(recommendedList, recommendedElement, orderKey, columnClass)
