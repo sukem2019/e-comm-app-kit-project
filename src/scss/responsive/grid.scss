@@ -28,9 +28,9 @@ $gutter-pc: 24px;
         display: flex;
         flex-wrap: wrap;
         background-clip: content-box;
-        margin: calc($gutter-mobile * -0.5);
+        margin: calc(#{$gutter-mobile} * -0.5);
         .col {
-            padding: calc($gutter-mobile * 0.5);
+            padding: calc(#{$gutter-mobile} * 0.5);
             background-clip: content-box;
             &.m-0 {
                 display: none;
@@ -99,11 +99,11 @@ $gutter-pc: 24px;
     }
     .grid, .grid-expand {
         .row {
-            margin-left: calc($gutter-tablet * -0.5);
-            margin-right: calc($gutter-tablet * -0.5);
+            margin-left: calc(#{$gutter-tablet} * -0.5);
+            margin-right: calc(#{$gutter-tablet} * -0.5);
             .col {
-                padding: 0 calc($gutter-tablet * 0.5);
-                margin: calc($gutter-tablet * 0.5) 0;
+                padding: 0 calc(#{$gutter-tablet} * 0.5);
+                margin: calc(#{$gutter-tablet} * 0.5) 0;
                 &.t-0 {
                     display: none;
                 }
@@ -171,11 +171,11 @@ $gutter-pc: 24px;
     }
     .grid, .grid-expand {
         .row {
-            margin-left: calc($gutter-pc * -0.5);
-            margin-right: calc($gutter-pc * -0.5);
+            margin-left: calc(#{$gutter-pc} * -0.5);
+            margin-right: calc(#{$gutter-pc} * -0.5);
             .col {
-                padding: 0 calc($gutter-pc * 0.5);
-                margin: calc($gutter-pc * 0.5) 0;
+                padding: 0 calc(#{$gutter-pc} * 0.5);
+                margin: calc(#{$gutter-pc} * 0.5) 0;
             }
             &.d-0 {
                 display: none;
