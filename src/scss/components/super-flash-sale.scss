@@ -10,16 +10,16 @@
         }
         .SFS__title {
             position: absolute;
-            top: calc($mobile-padding + 32px);
-            left: calc($mobile-padding + 24px);
+            top: calc(#{$mobile-padding} + 32px);
+            left: calc(#{$mobile-padding} + 24px);
             color: $white-background;
         }
         .SFS__period {
             display: flex;
             align-items: center;
             position: absolute;
-            left: calc($mobile-padding + 24px);
-            bottom: calc($mobile-padding + 32px);
+            left: calc(#{$mobile-padding} + 24px);
+            bottom: calc(#{$mobile-padding} + 32px);
             h4 {
                 color: $dark-neutral;
                 width: 42px;

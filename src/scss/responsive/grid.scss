@@ -36,56 +36,56 @@ $gutter-pc: 24px;
                 display: none;
             }
             &.m-1 {
-                flex-basis: percentage($number:  calc((1 / 12) * 1));
-                max-width: percentage($number:  calc((1 / 12) * 1));
+                flex-basis: percentage($number:  (1 / 12) * 1);
+                max-width: percentage($number:  (1 / 12) * 1);
             }
             &.m-2 {
-                flex-basis: percentage($number:  calc((1 / 12) * 2));
-                max-width: percentage($number:  calc((1 / 12) * 2));
+                flex-basis: percentage($number:  (1 / 12) * 2);
+                max-width: percentage($number:  (1 / 12) * 2);
             }
             &.m-3 {
-                flex-basis: percentage($number:  calc((1 / 12) * 3));
-                max-width: percentage($number:  calc((1 / 12) * 3));
+                flex-basis: percentage($number:  (1 / 12) * 3);
+                max-width: percentage($number:  (1 / 12) * 3);
             }
             &.m-4 {
-                flex-basis: percentage($number:  calc((1 / 12) * 4));
-                max-width: percentage($number:  calc((1 / 12) * 4));
+                flex-basis: percentage($number:  (1 / 12) * 4);
+                max-width: percentage($number:  (1 / 12) * 4);
             }
             &.m-5 {
-                flex-basis: percentage($number:  calc((1 / 12) * 5));
-                max-width: percentage($number:  calc((1 / 12) * 5));
+                flex-basis: percentage($number:  (1 / 12) * 5);
+                max-width: percentage($number:  (1 / 12) * 5);
             }
             &.m-6 {
-                flex-basis: percentage($number:  calc((1 / 12) * 6));
-                max-width: percentage($number:  calc((1 / 12) * 6));
+                flex-basis: percentage($number:  (1 / 12) * 6);
+                max-width: percentage($number:  (1 / 12) * 6);
             }
             &.m-7 {
-                flex-basis: percentage($number:  calc((1 / 12) * 7));
-                max-width: percentage($number:  calc((1 / 12) * 7));
+                flex-basis: percentage($number:  (1 / 12) * 7);
+                max-width: percentage($number:  (1 / 12) * 7);
             }
             &.m-8 {
-                flex-basis: percentage($number:  calc((1 / 12) * 8));
-                max-width: percentage($number:  calc((1 / 12) * 8));
+                flex-basis: percentage($number:  (1 / 12) * 8);
+                max-width: percentage($number:  (1 / 12) * 8);
             }
             &.m-9 {
-                flex-basis: percentage($number:  calc((1 / 12) * 9));
-                max-width: percentage($number:  calc((1 / 12) * 9));
+                flex-basis: percentage($number:  (1 / 12) * 9);
+                max-width: percentage($number:  (1 / 12) * 9);
             }
             &.m-10 {
-                flex-basis: percentage($number:  calc((1 / 12) * 10));
-                max-width: percentage($number:  calc((1 / 12) * 10));
+                flex-basis: percentage($number:  (1 / 12) * 10);
+                max-width: percentage($number:  (1 / 12) * 10);
             }
             &.m-11 {
-                flex-basis: percentage($number:  calc((1 / 12) * 11));
-                max-width: percentage($number:  calc((1 / 12) * 11));
+                flex-basis: percentage($number:  (1 / 12) * 11);
+                max-width: percentage($number:  (1 / 12) * 11);
             }
             &.m-12 {
-                flex-basis: percentage($number:  calc((1 / 12) * 12));
-                max-width: percentage($number:  calc((1 / 12) * 12));
+                flex-basis: percentage($number:  (1 / 12) * 12);
+                max-width: percentage($number:  (1 / 12) * 12);
             }
             &.m-20per {
-                flex-basis: percentage($number:  calc((1 / 10) * 2));
-                max-width: percentage($number:  calc((1 / 10) * 2));
+                flex-basis: percentage($number:  (1 / 10) * 2);
+                max-width: percentage($number:  (1 / 10) * 2);
             }
         }
     }
@@ -108,56 +108,56 @@ $gutter-pc: 24px;
                     display: none;
                 }
                 &.t-1 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 1));
-                    max-width: percentage($number:  calc((1 / 12) * 1));
+                    flex-basis: percentage($number:  (1 / 12) * 1);
+                    max-width: percentage($number:  (1 / 12) * 1);
                 }
                 &.t-2 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 2));
-                    max-width: percentage($number:  calc((1 / 12) * 2));
+                    flex-basis: percentage($number:  (1 / 12) * 2);
+                    max-width: percentage($number:  (1 / 12) * 2);
                 }
                 &.t-3 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 3));
-                    max-width: percentage($number:  calc((1 / 12) * 3));
+                    flex-basis: percentage($number:  (1 / 12) * 3);
+                    max-width: percentage($number:  (1 / 12) * 3);
                 }
                 &.t-4 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 4));
-                    max-width: percentage($number:  calc((1 / 12) * 4));
+                    flex-basis: percentage($number:  (1 / 12) * 4);
+                    max-width: percentage($number:  (1 / 12) * 4);
                 }
                 &.t-5 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 5));
-                    max-width: percentage($number:  calc((1 / 12) * 5));
+                    flex-basis: percentage($number:  (1 / 12) * 5);
+                    max-width: percentage($number:  (1 / 12) * 5);
                 }
                 &.t-6 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 6));
-                    max-width: percentage($number:  calc((1 / 12) * 6));
+                    flex-basis: percentage($number:  (1 / 12) * 6);
+                    max-width: percentage($number:  (1 / 12) * 6);
                 }
                 &.t-7 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 7));
-                    max-width: percentage($number:  calc((1 / 12) * 7));
+                    flex-basis: percentage($number:  (1 / 12) * 7);
+                    max-width: percentage($number:  (1 / 12) * 7);
                 }
                 &.t-8 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 8));
-                    max-width: percentage($number:  calc((1 / 12) * 8));
+                    flex-basis: percentage($number:  (1 / 12) * 8);
+                    max-width: percentage($number:  (1 / 12) * 8);
                 }
                 &.t-9 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 9));
-                    max-width: percentage($number:  calc((1 / 12) * 9));
+                    flex-basis: percentage($number:  (1 / 12) * 9);
+                    max-width: percentage($number:  (1 / 12) * 9);
                 }
                 &.t-10 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 10));
-                    max-width: percentage($number:  calc((1 / 12) * 10));
+                    flex-basis: percentage($number:  (1 / 12) * 10);
+                    max-width: percentage($number:  (1 / 12) * 10);
                 }
                 &.t-11 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 11));
-                    max-width: percentage($number:  calc((1 / 12) * 11));
+                    flex-basis: percentage($number:  (1 / 12) * 11);
+                    max-width: percentage($number:  (1 / 12) * 11);
                 }
                 &.t-12 {
-                    flex-basis: percentage($number:  calc((1 / 12) * 12));
-                    max-width: percentage($number:  calc((1 / 12) * 12));
+                    flex-basis: percentage($number:  (1 / 12) * 12);
+                    max-width: percentage($number:  (1 / 12) * 12);
                 }
                 &.t-20per {
-                    flex-basis: percentage($number:  calc((1 / 10) * 2));
-                    max-width: percentage($number:  calc((1 / 10) * 2));
+                    flex-basis: percentage($number:  (1 / 10) * 2);
+                    max-width: percentage($number:  (1 / 10) * 2);
                 }
             }
         }
@@ -181,56 +181,56 @@ $gutter-pc: 24px;
                 display: none;
             }
             &.d-1 {
-                flex-basis: percentage($number:  calc((1 / 12) * 1));
-                max-width: percentage($number:  calc((1 / 12) * 1));
+                flex-basis: percentage($number:  (1 / 12) * 1);
+                max-width: percentage($number:  (1 / 12) * 1);
             }
             &.d-2 {
-                flex-basis: percentage($number:  calc((1 / 12) * 2));
-                max-width: percentage($number:  calc((1 / 12) * 2));
+                flex-basis: percentage($number:  (1 / 12) * 2);
+                max-width: percentage($number:  (1 / 12) * 2);
             }
             &.d-3 {
-                flex-basis: percentage($number:  calc((1 / 12) * 3));
-                max-width: percentage($number:  calc((1 / 12) * 3));
+                flex-basis: percentage($number:  (1 / 12) * 3);
+                max-width: percentage($number:  (1 / 12) * 3);
             }
             &.d-4 {
-                flex-basis: percentage($number:  calc((1 / 12) * 4));
-                max-width: percentage($number:  calc((1 / 12) * 4));
+                flex-basis: percentage($number:  (1 / 12) * 4);
+                max-width: percentage($number:  (1 / 12) * 4);
             }
             &.d-5 {
-                flex-basis: percentage($number:  calc((1 / 12) * 5));
-                max-width: percentage($number:  calc((1 / 12) * 5));
+                flex-basis: percentage($number:  (1 / 12) * 5);
+                max-width: percentage($number:  (1 / 12) * 5);
             }
             &.d-6 {
-                flex-basis: percentage($number:  calc((1 / 12) * 6));
-                max-width: percentage($number:  calc((1 / 12) * 6));
+                flex-basis: percentage($number:  (1 / 12) * 6);
+                max-width: percentage($number:  (1 / 12) * 6);
             }
             &.d-7 {
-                flex-basis: percentage($number:  calc((1 / 12) * 7));
-                max-width: percentage($number:  calc((1 / 12) * 7));
+                flex-basis: percentage($number:  (1 / 12) * 7);
+                max-width: percentage($number:  (1 / 12) * 7);
             }
             &.d-8 {
-                flex-basis: percentage($number:  calc((1 / 12) * 8));
-                max-width: percentage($number:  calc((1 / 12) * 8));
+                flex-basis: percentage($number:  (1 / 12) * 8);
+                max-width: percentage($number:  (1 / 12) * 8);
             }
             &.d-9 {
-                flex-basis: percentage($number:  calc((1 / 12) * 9));
-                max-width: percentage($number:  calc((1 / 12) * 9));
+                flex-basis: percentage($number:  (1 / 12) * 9);
+                max-width: percentage($number:  (1 / 12) * 9);
             }
             &.d-10 {
-                flex-basis: percentage($number:  calc((1 / 12) * 10));
-                max-width: percentage($number:  calc((1 / 12) * 10));
+                flex-basis: percentage($number:  (1 / 12) * 10);
+                max-width: percentage($number:  (1 / 12) * 10);
             }
             &.d-11 {
-                flex-basis: percentage($number:  calc((1 / 12) * 11));
-                max-width: percentage($number:  calc((1 / 12) * 11));
+                flex-basis: percentage($number:  (1 / 12) * 11);
+                max-width: percentage($number:  (1 / 12) * 11);
             }
             &.d-12 {
-                flex-basis: percentage($number:  calc((1 / 12) * 12));
-                max-width: percentage($number:  calc((1 / 12) * 12));
+                flex-basis: percentage($number:  (1 / 12) * 12);
+                max-width: percentage($number:  (1 / 12) * 12);
             }
             &.d-20per {
-                flex-basis: percentage($number:  calc((1 / 10) * 2));
-                max-width: percentage($number:  calc((1 / 10) * 2));
+                flex-basis: percentage($number:  (1 / 10) * 2);
+                max-width: percentage($number:  (1 / 10) * 2);
             }
         }
 
