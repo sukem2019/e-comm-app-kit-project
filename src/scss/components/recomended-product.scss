@@ -23,7 +23,7 @@
         }
     }
     .product-list {
-        padding-bottom: calc($mobile-menu-height + $mobile-menu-padding-bottom);
+        padding-bottom: calc(#{$mobile-menu-height} + #{$mobile-menu-padding-bottom});
         .product-item {
             @include productCardMobile;
             @include setInternalSpaceY(8px);

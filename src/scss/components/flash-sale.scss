@@ -16,8 +16,8 @@
         display: flex;
         flex-wrap: nowrap;
         width: auto;
-        margin-left: calc($mobile-padding * -1);
-        margin-right: calc($mobile-padding * -1);
+        margin-left: calc(#{$mobile-padding} * -1);
+        margin-right: calc(#{$mobile-padding} * -1);
         padding-left: $mobile-padding;
         padding-right: $mobile-padding;
         overflow-x: scroll;
