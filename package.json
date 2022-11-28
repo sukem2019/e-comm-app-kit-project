@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/sukem2019/e-comm-app-kit-project#readme",
   "dependencies": {
-    "node-sass": "^8.0.0",
-    "vercel": "^28.5.6"
+    "node-sass": "^8.0.0"
   }
 }
