@@ -4,8 +4,8 @@
   "description": "e commerce app from figma (html, scss and js)",
   "main": "main.js",
   "scripts": {
-    "build": "node-sass src/scss/app.scss dist/css/app.css",
-    "dev": "node-sass src/scss/app.scss dist/css/app.css -w"
+    "build": "node-sass src/scss/app.scss src/css/app.css",
+    "dev": "node-sass src/scss/app.scss src/css/app.css -w"
   },
   "repository": {
     "type": "git",
