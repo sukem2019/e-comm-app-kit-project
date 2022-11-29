@@ -143,7 +143,7 @@ export const productList = [
         id: 1,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../images/products/product${this.id}.png`
+            return `./images/products/product${this.id}.png`
         },
         categoryId: 6,
         flashSaleOrder: 1,          // sale order number, 0 means not for sale
@@ -154,7 +154,7 @@ export const productList = [
         id: 2,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../images/products/product${this.id}.png`
+            return `./images/products/product${this.id}.png`
         },
         categoryId: 9,
         flashSaleOrder: 2,          // sale order number, 0 means not for sale
@@ -165,7 +165,7 @@ export const productList = [
         id: 3,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../images/products/product${this.id}.png`
+            return `./images/products/product${this.id}.png`
         },
         categoryId: 6,
         flashSaleOrder: 3,          // sale order number, 0 means not for sale
@@ -176,7 +176,7 @@ export const productList = [
         id: 4,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../images/products/product${this.id}.png`
+            return `./images/products/product${this.id}.png`
         },
         categoryId: 9,
         flashSaleOrder: 4,          // sale order number, 0 means not for sale
@@ -187,7 +187,7 @@ export const productList = [
         id: 5,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../images/products/product${this.id}.png`
+            return `./images/products/product${this.id}.png`
         },
         categoryId: 6,
         flashSaleOrder: 5,          // sale order number, 0 means not for sale
@@ -198,7 +198,7 @@ export const productList = [
         id: 6,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../images/products/product${this.id}.png`
+            return `./images/products/product${this.id}.png`
         },
         categoryId: 9,
         flashSaleOrder: 6,          // sale order number, 0 means not for sale
@@ -212,14 +212,14 @@ export const superFlashSaleList = [
         superFlashSaleOrder: 1,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../images/SFS/SFS${this.superFlashSaleOrder}.png`
+            return `./images/SFS/SFS${this.superFlashSaleOrder}.png`
         },
     }, 
     {
         superFlashSaleOrder: 2,
         name: 'Nike Air Max 270 React ENG',
         img() {
-            return `../images/SFS/SFS${this.superFlashSaleOrder}.png`
+            return `./images/SFS/SFS${this.superFlashSaleOrder}.png`
         },
     }, 
 
@@ -236,7 +236,7 @@ export const flashSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/FS/FS${this.flashSaleOrder}.png`
+            return `./images/FS/FS${this.flashSaleOrder}.png`
         },
     },
     {
@@ -249,7 +249,7 @@ export const flashSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/FS/FS${this.flashSaleOrder}.png`
+            return `./images/FS/FS${this.flashSaleOrder}.png`
         },
     },
     {
@@ -262,7 +262,7 @@ export const flashSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/FS/FS${this.flashSaleOrder}.png`
+            return `./images/FS/FS${this.flashSaleOrder}.png`
         },
     },
     {
@@ -275,7 +275,7 @@ export const flashSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/FS/FS${this.flashSaleOrder}.png`
+            return `./images/FS/FS${this.flashSaleOrder}.png`
         },
     },
     {
@@ -288,7 +288,7 @@ export const flashSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/FS/FS${this.flashSaleOrder}.png`
+            return `./images/FS/FS${this.flashSaleOrder}.png`
         },
     },
     {
@@ -301,7 +301,7 @@ export const flashSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/FS/FS${this.flashSaleOrder}.png`
+            return `./images/FS/FS${this.flashSaleOrder}.png`
         },
     },
 ]
@@ -317,7 +317,7 @@ export const megaSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/MS/MS${this.megaSaleOrder}.png`
+            return `./images/MS/MS${this.megaSaleOrder}.png`
         },
     },
     {
@@ -330,7 +330,7 @@ export const megaSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/MS/MS${this.megaSaleOrder}.png`
+            return `./images/MS/MS${this.megaSaleOrder}.png`
         },
     },
     {
@@ -343,7 +343,7 @@ export const megaSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/MS/MS${this.megaSaleOrder}.png`
+            return `./images/MS/MS${this.megaSaleOrder}.png`
         },
     },
     {
@@ -356,7 +356,7 @@ export const megaSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/MS/MS${this.megaSaleOrder}.png`
+            return `./images/MS/MS${this.megaSaleOrder}.png`
         },
     },
     {
@@ -369,7 +369,7 @@ export const megaSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/MS/MS${this.megaSaleOrder}.png`
+            return `./images/MS/MS${this.megaSaleOrder}.png`
         },
     },
     {
@@ -382,7 +382,7 @@ export const megaSaleList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/MS/MS${this.megaSaleOrder}.png`
+            return `./images/MS/MS${this.megaSaleOrder}.png`
         },
     },
 ]
@@ -399,7 +399,7 @@ export const recommendedList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/RP/RP${this.recommendedOrder}.png`
+            return `./images/RP/RP${this.recommendedOrder}.png`
         },
     },
     {
@@ -413,7 +413,7 @@ export const recommendedList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/RP/RP${this.recommendedOrder}.png`
+            return `./images/RP/RP${this.recommendedOrder}.png`
         },
     },
     {
@@ -427,7 +427,7 @@ export const recommendedList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/RP/RP${this.recommendedOrder}.png`
+            return `./images/RP/RP${this.recommendedOrder}.png`
         },
     },
     {
@@ -441,7 +441,7 @@ export const recommendedList = [
             return Math.floor(this.initialPrice * this.salePercentage / 100)
         },
         img() {
-            return `../images/RP/RP${this.recommendedOrder}.png`
+            return `./images/RP/RP${this.recommendedOrder}.png`
         },
     },
 ]
