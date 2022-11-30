@@ -713,3 +713,24 @@ h6 {
         stroke: #40BFFF; }
       .menu .menu-line .menu-item.active .menu-text {
         color: #40BFFF; }
+
+.tablet {
+  width: 100%;
+  height: 100vh;
+  background-color: #40BFFF;
+  color: #FFFFFF;
+  display: none; }
+
+@media screen and (min-width: 740px) {
+  .mobile {
+    display: none; }
+  .tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+
+.tablet {
+  width: 100%;
+  height: 100vh;
+  background-color: #40BFFF;
+  color: #FFFFFF; }
