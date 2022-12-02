@@ -26,7 +26,7 @@ var notifyElement = document.querySelector('#new-notification')
 showNewNotification(isNewNotification,notifyElement)
 
 // Sale counting down
-var saleEndTime = "2022/12/02"
+var saleEndTime = "2022/12/06"
 var hourElement = document.querySelector('#hour-count-down')
 var minuteElement = document.querySelector('#minute-count-down')
 var secondElement = document.querySelector('#second-count-down')
