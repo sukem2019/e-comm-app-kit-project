@@ -14,9 +14,20 @@
         display: block;
         .nav {
             .navbar {
-                font-size: 24px;
+                font-size: 20px;
                 height: $pc-nav-height;
             }
+        }
+        .news {
+            .container {
+                .news-item {
+                    flex-direction: row;
+                    justify-content: unset;
+                }
+            }
+        }
+        .search {
+            width: 50%;
         }
     }
 }

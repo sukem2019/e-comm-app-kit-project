@@ -66,6 +66,9 @@
             @include freeFlex(32px);
             .profile {
                 @include freeFlex(8px);
+                p {
+                    width: max-content;
+                }
             }
             .cart {
                 position: relative;

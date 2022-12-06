@@ -1,0 +1,74 @@
+// Tablet
+.tablet {
+    .BS {
+        margin-top: -30px;
+        color: $dark-neutral;
+        .BS__title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 52px;
+            text-align: center;
+        }
+        .category {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            @include setInternalSpaceX(60px);
+            list-style: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 33px;
+            .category__item {
+                a {
+                    color: $dark-neutral;
+                }
+                &.active {
+                    a {
+                        color: $blue-primary;
+                        text-decoration: underline;
+                    }
+                }
+    
+            }
+        }
+        .product-list {
+            .product-item {
+                @include productCardTablet;
+                @include setInternalSpaceY(8px);
+                .product-img {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .product-info {
+                    @include setInternalSpaceY(6px);
+                    .product-rate {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 12px;
+                        @include setInternalSpaceX(12px);
+                        svg {
+                            fill: $light-neutral;
+                        }
+                    }
+                }
+            }
+            .load-more {
+                margin-top: 16px;
+                text-align: center;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 30px;
+                color: $blue-primary;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -82,6 +82,7 @@
         .SFS__slide {
             position: relative;
             top: -64px;
+            border-radius: 5px;
             box-shadow: 0px 10px 25px rgba(102, 102, 102, 0.15);
             .product-list {
                 align-items: center;
@@ -90,7 +91,8 @@
                     img {
                         width: 100%;
                         height: auto;
-                        outline: 1px solid $light-neutral;
+                        border-radius: 5px;
+                        outline: 2px solid $light-neutral;
                     }
                     .product-description {
                         position: absolute;
