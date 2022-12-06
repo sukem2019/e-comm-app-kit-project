@@ -4,21 +4,20 @@
 @import './responsive/grid.scss';
 @import './mixin/set-space.scss';
 @import './mixin/svg-color.scss';
+@import './mixin/free-flex.scss';
 @import './mixin/border.scss';
 @import './mixin/hide-scrollbar.scss';
 @import './mixin/product-card.scss';
 @import './components/header.scss';
 @import './components/super-flash-sale.scss';
+@import './components/best-seller.scss';
+@import './components/banner.scss';
+@import './components/why-us.scss';
+@import './components/news.scss';
+@import './components/featured-products.scss';
 @import './components/category.scss';
 @import './components/flash-sale.scss';
 @import './components/mega-sale.scss';
 @import './components/recomended-product.scss';
 @import './components/menu.scss';
 @import './responsive/responsive.scss';
-
-.tablet {
-    width: 100%;
-    height: 100vh;
-    background-color: $blue-primary;
-    color: $white-background;
-}

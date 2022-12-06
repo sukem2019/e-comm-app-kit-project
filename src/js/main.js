@@ -35,9 +35,13 @@ saleCountDown(saleEndTime, hourElement, minuteElement, secondElement)
 
 // Show quantity in cart
 var quantityInCart = 2
-var quantityInCartElement = document.querySelector('#quantity-in-cart')
+var quantityInCartElementMobile = document.querySelector('.mobile .cart-number')
 
-showQuantityInCart(quantityInCart, quantityInCartElement)
+showQuantityInCart(quantityInCart, quantityInCartElementMobile) // On mobile
+
+var quantityInCartElementTablet = document.querySelector('.tablet .cart-number')
+
+showQuantityInCart(quantityInCart, quantityInCartElementTablet) // On tablet
 
 // Hide menu when scroll-up
 var hiddenElement = document.querySelector('#menu')

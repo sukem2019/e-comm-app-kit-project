@@ -7,6 +7,13 @@
     padding: 0;
 }
 
+// Clearfix
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 // Placeholder color
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $grey-neutral;

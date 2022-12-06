@@ -1,8 +1,7 @@
-.header {
-    height: 78px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+// Mobile
+.mobile .header {
+    height: $mobile-header-height;
+    @include freeFlex($mobile-padding);
     padding: $mobile-padding;
     border-bottom: 1px solid $light-neutral;
     .header__search {
@@ -44,5 +43,97 @@
             right: -1px;
         }
     }
-    @include setInternalSpaceX($mobile-padding)
+}
+
+// Tablet
+.tablet {
+    display: none;
+    .header {
+        height: $tablet-header-height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $dark-neutral;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        .configuration {
+            @include freeFlex(14px);
+        }
+        .user-access {
+            @include freeFlex(32px);
+            .profile {
+                @include freeFlex(8px);
+                p {
+                    width: max-content;
+                }
+            }
+            .cart {
+                position: relative;
+                .cart-number {
+                    box-sizing: content-box;
+                    @include border(20px, 20px, 20px, $red-primary, 2px solid $white-background);
+                    position: absolute;
+                    top: -50%;
+                    right: -50%;
+                    color: $white-background;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .purchase-info {
+                .total {
+                    color: $grey-neutral;
+                }
+                @include freeFlex(32px);
+            }
+        }
+        svg {
+            @include svgColor($dark-neutral);
+        }
+    }
+    .divider {
+        background-color: $light-grey-background;
+        width: 100%;
+        height: 2px;
+    }
+    .nav {
+        .brand {
+            @include freeFlex(6px);
+            justify-content: start;
+            .brand__name {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+        .navbar {
+            height: $tablet-nav-height;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 36px;
+            .navbar__item {
+                a {
+                    color: $dark-neutral;
+                }
+                &.active {
+                    a {
+                        color: $blue-primary;
+                    }
+                }
+
+            }
+        }
+    }
 }

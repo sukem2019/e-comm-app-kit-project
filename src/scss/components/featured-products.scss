@@ -1,0 +1,85 @@
+.tablet {
+    .FP {
+        margin-top: 80px;
+        color: $dark-neutral;
+        .FP__header {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 52px;
+            text-align: center;
+        }
+        .product-list {
+            margin-top: 30px;
+            .product-item {
+                @include productCardTablet;
+                display: flex;
+                flex-direction: row;
+                border: none;
+                .product-img {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                    width: 50%;
+                }
+                .product-info {
+                    width: 50%;
+                    @include setInternalSpaceY(8px);
+                    .product-description {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        text-align: left;
+                    }
+                    .product-rate {
+                        display: flex;
+                        justify-content: flex-start;
+                        @include setInternalSpaceX(6px);
+                        svg {
+                            fill: $light-neutral;
+                        }
+                    }
+                    .sale {
+                        justify-content: flex-start;
+                        .product-price {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: $pink-primary;
+                        }
+                        .initial-price {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: $grey-neutral;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .search {
+        width: 70%;
+        margin: 60px auto;
+        display: flex;
+        border-radius: 5px;
+        border: 2px solid $blue-background;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        .search__input {
+            flex-grow: 1;
+            border: none;
+            padding: 16px 24px;
+        }
+        .search__button {
+            padding: 16px 24px;
+            background-color: $blue-primary;
+            color: $white-background;
+            border: none;
+        }
+    }
+}

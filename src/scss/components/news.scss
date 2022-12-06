@@ -1,0 +1,57 @@
+.tablet {
+    .news {
+        margin-top: 80px;
+        .news__header {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 52px;
+            text-align: center;
+            color: $dark-neutral;
+        }
+        .container {
+            margin-top: 30px;
+            .news-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .news__img {
+                    object-fit: contain;
+                    width: 50%;
+                    margin: 15px;
+                }
+                .news__content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    .news__date {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 27px;
+                        color: $grey-neutral;
+                    }
+                    .news__title {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 33px;
+                        color: $dark-neutral;
+                    }
+                    .news__text {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: $dark-neutral;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.tablet {
+    .banner {
+        background-color: $blue-primary;
+        overflow: visible;
+        margin-top: 5%;
+        color: $white-background;
+        .container {
+            overflow: visible;
+            .banner__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                @include setInternalSpaceY(16px);
+                .banner__title {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+                .banner__info {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px; 
+                }
+                .banner__link {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: $white-background;
+                    text-decoration: underline;
+                }
+            }
+            .banner__img {
+                img {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    top: -18%;
+                }
+            }
+        }
+    }
+}

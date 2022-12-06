@@ -1,51 +1,128 @@
-.SFS {
-    .SFS__item {
-        width: 100%;
-        position: relative;
-        padding: $mobile-padding;
-        .SFS__img {
-            border-radius: 5px;
+.mobile {
+    .SFS {
+        .SFS__item {
             width: 100%;
-            height: auto;
-        }
-        .SFS__title {
-            position: absolute;
-            top: calc(#{$mobile-padding} + 32px);
-            left: calc(#{$mobile-padding} + 24px);
-            color: $white-background;
-        }
-        .SFS__period {
-            display: flex;
-            align-items: center;
-            position: absolute;
-            left: calc(#{$mobile-padding} + 24px);
-            bottom: calc(#{$mobile-padding} + 32px);
-            h4 {
-                color: $dark-neutral;
-                width: 42px;
-                height: 42px;
-                background-color: $white-background;
+            position: relative;
+            padding: $mobile-padding;
+            .SFS__img {
                 border-radius: 5px;
-                text-align: center;
-                line-height: 42px;
-            }
-            h5 {
-                color: $white-background;
-                width: 4px;
+                width: 100%;
                 height: auto;
             }
-            @include setInternalSpaceX(4px)
+            .SFS__title {
+                position: absolute;
+                top: calc(#{$mobile-padding} + 32px);
+                left: calc(#{$mobile-padding} + 24px);
+                color: $white-background;
+            }
+            .SFS__period {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                left: calc(#{$mobile-padding} + 24px);
+                bottom: calc(#{$mobile-padding} + 32px);
+                h4 {
+                    color: $dark-neutral;
+                    width: 42px;
+                    height: 42px;
+                    background-color: $white-background;
+                    border-radius: 5px;
+                    text-align: center;
+                    line-height: 42px;
+                }
+                h5 {
+                    color: $white-background;
+                    width: 4px;
+                    height: auto;
+                }
+                @include setInternalSpaceX(4px)
+            }
+        }
+        .SFS__indicator {
+            display: flex;
+            justify-content: center;
+            .SFS__dot {
+                @include border(8px, 8px, 8px, $light-neutral);
+            }
+            .SFS__dot.active {
+                background-color: $blue-primary;
+            }
+            @include setInternalSpaceX(8px)
         }
     }
-    .SFS__indicator {
-        display: flex;
-        justify-content: center;
-        .SFS__dot {
-            @include border(8px, 8px, 8px, $light-neutral);
+}
+.tablet {
+    .SFS {
+        position: relative;
+        overflow: visible;
+        .SFS__banner {
+            position: relative;
+            .SFS__img {
+                width: 100%;
+                height: auto;
+            }
+            .SFS__title {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 150%;
+                    /* or 96px */
+        
+                    letter-spacing: 0.5px;
+                    color: $white-background;
+                }
+            }            
         }
-        .SFS__dot.active {
-            background-color: $blue-primary;
+        .SFS__slide {
+            position: relative;
+            top: -64px;
+            border-radius: 5px;
+            box-shadow: 0px 10px 25px rgba(102, 102, 102, 0.15);
+            .product-list {
+                align-items: center;
+                .product-item {
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 5px;
+                        outline: 2px solid $light-neutral;
+                    }
+                    .product-description {
+                        position: absolute;
+                        width: 55%;
+                        top: 5%;
+                        left: 10%;
+                        color: $dark-neutral;
+                    }
+                    .product-price {
+                        position: absolute;
+                        width: 20%;
+                        top: 5%;
+                        right: 10%;
+                        color: $blue-primary;
+                    }
+                    .sale-info {
+                        position: absolute;
+                        bottom: 5%;
+                        @include freeFlex(8px);
+                        left: 50%;
+                        transform: translateX(-50%);
+                        .initial-price {
+                            color: $grey-neutral;
+                        }
+                        .sale-percentage {
+                            color: $red-primary;
+                        }
+                    }
+                }
+            }
         }
-        @include setInternalSpaceX(8px)
     }
 }
