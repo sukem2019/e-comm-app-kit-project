@@ -1,0 +1,69 @@
+.tablet {
+    .footer {
+        width: 100%;
+        height: max-content;
+        background-color: $blue-background;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        color: $dark-neutral;
+        .container {
+            overflow: inherit;
+            .first-row, .second-row {
+                padding-top: 25px;
+                align-items: baseline;
+                justify-content: space-between;
+                .footer__item {
+                    @include setInternalSpaceY(16px);
+                    .footer__heading {
+                        @include freeFlex(6px);
+                        justify-content: flex-start;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 27px;
+                        .brand__name {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 27px;
+                        }
+                    }
+                    .footer__content {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                    .fan-pages {
+                        @include setInternalSpaceX(24px);
+                        
+                    }
+                }
+            }
+            .divider {
+                height: 1px;
+                margin-top: 50px;
+            }
+            .third-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 10px;
+                .rights {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $grey-neutral;
+                }
+                .partners {
+                    @include freeFlex(24px);
+                }
+            }
+        }
+    }
+}
