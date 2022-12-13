@@ -8,6 +8,7 @@ import saleCountDown from "./modules/sale-count-down.js"
 import showQuantityInCart from "./modules/quantity-in-cart.js"
 import hideWhenScrollUp from "./modules/hide-when-scroll-up.js"
 import slide from "./modules/slide.js"
+import dropDown from "./modules/drop-down.js"
 import showCategoryList from "./modules/category-list.js"
 import showSaleProducts from "./modules/sale-products-list.js"
 import showProducts from "./modules/products-list.js"
@@ -86,3 +87,9 @@ activeOnClick(navbarElements)
 var menuElements = document.querySelectorAll('.menu .menu-item')
 
 activeOnClick(menuElements)
+
+// Show subnav
+var homeNavbarElement = document.querySelector('.navbar__item.home')
+var homeSubnavElement = document.querySelector('.subnav.home')
+
+dropDown(homeNavbarElement, homeSubnavElement)
