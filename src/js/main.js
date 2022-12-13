@@ -11,6 +11,7 @@ import slide from "./modules/slide.js"
 import showCategoryList from "./modules/category-list.js"
 import showSaleProducts from "./modules/sale-products-list.js"
 import showProducts from "./modules/products-list.js"
+import activeOnClick from "./modules/active-on-click.js"
 
 // Test
 // console.log(categoryList)
@@ -75,3 +76,13 @@ var orderKey = 'recommendedOrder'
 var columnClass = 'col m-6'
 
 showProducts(recommendedList, recommendedElement, orderKey, columnClass)
+
+// Active tablet navbar when clicked
+var navbarElements = document.querySelectorAll('.navbar .navbar__item')
+
+activeOnClick(navbarElements)
+
+// Active mobile menu when clicked
+var menuElements = document.querySelectorAll('.menu .menu-item')
+
+activeOnClick(menuElements)
