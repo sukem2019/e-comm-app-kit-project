@@ -28,7 +28,7 @@ var notifyElement = document.querySelector('#new-notification')
 showNewNotification(isNewNotification,notifyElement)
 
 // Sale counting down
-var saleEndTime = "2022/12/06"
+var saleEndTime = new Date((new Date().getTime() + 9*3600000))
 var hourElement = document.querySelector('#hour-count-down')
 var minuteElement = document.querySelector('#minute-count-down')
 var secondElement = document.querySelector('#second-count-down')
@@ -88,7 +88,7 @@ var menuElements = document.querySelectorAll('.menu .menu-item')
 
 activeOnClick(menuElements)
 
-// Show subnav
+// Show subnav when hover
 var homeNavbarElement = document.querySelector('.navbar__item.home')
 var homeSubnavElement = document.querySelector('.subnav.home')
 
