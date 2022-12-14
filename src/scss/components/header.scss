@@ -101,6 +101,9 @@
         height: 2px;
     }
     .nav {
+        overflow: visible;
+        position: relative;
+        color: $dark-neutral;
         .brand {
             @include freeFlex(6px);
             justify-content: start;
@@ -122,7 +125,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
-            line-height: 36px;
+            line-height: $tablet-nav-height;
             .navbar__item {
                 a {
                     color: $dark-neutral;
@@ -133,6 +136,57 @@
                     }
                 }
 
+            }
+        }
+        .subnav {
+            display: none;
+            flex-direction: row-reverse;
+            position: absolute;
+            background-color: none;
+            z-index: 1;
+            overflow: visible;
+            top: calc(#{$tablet-nav-height} - #{$gutter-tablet} * 0.5);
+            left: 0;
+            right: 0;
+            .subnav__triangle {
+                position: absolute;
+                font-size: 40px;
+                line-height: 12px;
+                color: $grey-background;        
+                top: -12px;
+                left: 33.3%;                
+            }
+            .subnav__content {
+                border: 1px solid $grey-background;
+                background-clip: border-box;
+                background-color: $white-background;
+                top: 0;
+                .subnav__item {
+                    padding: 32px;
+                    .subnav__category-title {
+                        padding: 10px 0px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 33px;
+                        color: $grey-neutral;
+                    }
+                    .subnav__list {
+                        li {
+                            list-style: none;
+                            padding: 5px 0;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            a {
+                                color: $dark-neutral;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

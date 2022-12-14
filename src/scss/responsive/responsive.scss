@@ -17,6 +17,9 @@
                 font-size: 20px;
                 height: $pc-nav-height;
             }
+            .subnav {
+                top: calc(#{$pc-nav-height} - #{$gutter-pc} * 0.5);
+            }
         }
         .news {
             .container {
