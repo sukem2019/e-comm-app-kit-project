@@ -583,6 +583,25 @@ h6 {
             .tablet .nav .subnav .subnav__content .subnav__item .subnav__list li a {
               color: #223263; }
 
+.tablet .mini-cart {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .tablet .mini-cart .mini-cart__container {
+    background-color: #FFFFFF;
+    padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #BCDDFE; }
+    .tablet .mini-cart .mini-cart__container .mini-cart__title {
+      text-align: center; }
+
 .mobile .SFS .SFS__item {
   width: 100%;
   position: relative;

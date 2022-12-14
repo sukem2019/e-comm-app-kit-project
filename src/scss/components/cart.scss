@@ -1,0 +1,23 @@
+.tablet {
+    .mini-cart {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        backdrop-filter: blur(2px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .mini-cart__container {
+            background-color: $white-background;
+            padding: 60px 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px $blue-background;
+            .mini-cart__title {
+                text-align: center;
+            }
+        }
+    }
+}
