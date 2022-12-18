@@ -520,22 +520,25 @@
             </div>
         </div>
         <!-- Mini cart -->
-        <div class="mini-cart">
+        <div class="mini-cart hidden">
             <div class="mini-cart__container grid">
+                <button class="close-button">&times;</button>
                 <div class="mini-cart__title">YOUR CART</div>
                 <div class="mini-cart__content">
                     <table>
-                        <th>
-                            <td>PRODUCT</td>
-                            <td>UNIT PRICE</td>
-                            <td>QUANTITY</td>
-                            <td>SUBTOTAL</td>
-                        </th>
+                        <tr>
+                            <th>PRODUCT</th>
+                            <th>UNIT PRICE</th>
+                            <th>QUANTITY</th>
+                            <th>SUBTOTAL</th>
+                        </tr>
                         <tr>
                             <td>
-                                <button>&times;</button>
-                                <img src="./images/cart/cart1.png" alt="cart1 img">
-                                <p>Nike Airmax 270 react</p>
+                                <div class="product">
+                                    <button>&times;</button>
+                                    <img src="./images/cart/cart1.png" alt="cart1 img">
+                                    <p>Nike Airmax 270 react</p>
+                                </div>
                             </td>
                             <td>$499</td>
                             <td>
@@ -549,9 +552,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <button>&times;</button>
-                                <img src="./images/cart/cart2.png" alt="cart2 img">
-                                <p>Nike Airmax 270 react</p>
+                                <div class="product">
+                                    <button>&times;</button>
+                                    <img src="./images/cart/cart2.png" alt="cart2 img">
+                                    <p>Nike Airmax 270 react</p>
+                                </div>
                             </td>
                             <td>$499</td>
                             <td>
@@ -563,13 +568,14 @@
                             </td>
                             <td>$998</td>
                         </tr>
-                        <tr>
+                        <tr class="total">
                             <td></td>
                             <td>TOTAL</td>
                             <td></td>
                             <td>$1996</td>
                         </tr>
                     </table>
+                    <a href="#payment" class="checkout-button">Check out</a>
                 </div>
             </div>
 

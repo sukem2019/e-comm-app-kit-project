@@ -1,5 +1,11 @@
 .tablet {
     .mini-cart {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: $dark-neutral;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -11,12 +17,121 @@
         justify-content: center;
         align-items: center;
         .mini-cart__container {
+            position: relative;
             background-color: $white-background;
+            max-height: 90vh;
             padding: 60px 30px;
             border-radius: 10px;
             box-shadow: 0px 0px 8px $blue-background;
+            text-align: center;
+            .close-button {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                border: none;
+                background-color: transparent;
+                color: $red-primary;
+                font-size: 2rem;
+                &:hover {
+                    opacity: 0.8;
+                }
+                &:active {
+                    opacity: 1;;
+                }
+            }
             .mini-cart__title {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 52px;
                 text-align: center;
+            }
+            .mini-cart__content {
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    td, th {
+                        border-bottom: 1px solid $grey-background;
+                        padding: 20px 0;
+                        text-align: center;
+                        &:nth-child(1) {
+                            width: 60%;
+                        }
+                        &:nth-child(2) {
+                            width: 10%;
+                        }
+                        &:nth-child(3) {
+                            width: 20%;
+                        }
+                        &:nth-child(4) {
+                            width: 10%;
+                        }
+                    }
+                    .product {
+                        @include freeFlex(40px);
+                        justify-content: flex-start;
+                        button {
+                            @include border(20px, 20px, 20px, $grey-background);
+                            color: $red-primary;
+                            &:hover {
+                                background-color: $grey-neutral;
+                            }
+                            &:active {
+                                background-color: $grey-background;
+                            }
+                        }
+                        img {
+                            width: 135px;
+                        }
+                    }
+                    .quantity {
+                        display: flex;
+                        justify-content: center;
+                        button {
+                            @include border(30px, 30px, 0px, $grey-background);
+                            color: $blue-primary;
+                            &:hover {
+                                background-color: $grey-neutral;
+                            }
+                            &:active {
+                                background-color: $grey-background;
+                            }
+                        }
+                        .quantity-number {
+                            @include border(30px, 30px, 0px, $grey-background);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    .total {
+                        font-weight: bold;
+                    }
+                }
+            }
+            .checkout-button {
+                display: block;
+                width: min-content;
+                color: $white-background;
+                background-color: $blue-primary;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+                min-width: 200px;
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                &:hover {
+                    opacity: 0.8;
+                }
+                &:active {
+                    opacity: 1;;
+                }
             }
         }
     }
