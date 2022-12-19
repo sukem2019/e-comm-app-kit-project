@@ -774,7 +774,8 @@ h6 {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      overflow: visible; }
       .tablet .SFS .SFS__banner .SFS__title p {
         font-family: 'Poppins';
         font-style: normal;
@@ -783,7 +784,8 @@ h6 {
         line-height: 150%;
         /* or 96px */
         letter-spacing: 0.5px;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        text-shadow: 0 0 30px #000; }
   .tablet .SFS .SFS__slide {
     position: relative;
     top: -64px;
